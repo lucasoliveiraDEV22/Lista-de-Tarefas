@@ -19,7 +19,7 @@ body {
     padding: 20px;
     width: 30%;
 }
-
+/* COMO VOCÊ FEZ A O TÍTULO E A BARRA DE PESQUISA ACOMPANHAREM A BARRA SCROLL? */
 .header {
     font-size: 22px;
 }
@@ -36,9 +36,9 @@ h1 {
 #first-button {
     position: absolute;
     right: 18%;
-    margin-top: -10px;
+    margin-top: -10px; 
 }
-
+/* O ESTILO DENTRO DO i É PARA APLICAR NOS ITENS QUE SERÃO CRIADOS? */
 .header i {
     font-size: 22px;
 }
@@ -80,6 +80,7 @@ button {
     margin-top: -3px;
 
 }
+/*Por que você usou column-reverse? */
 
 ul {
     display: flex;
@@ -96,7 +97,7 @@ ul {
     display: flex;
     align-items: center;
 }
-
+/* ESSES ESTILOS .divLi pra baixo são para o banco de dados? */
 .divLi span {
     width: 80%;
     color: dimgray;
@@ -112,11 +113,11 @@ ul {
     font-size: 25px;
     color: orange;
 }
-
+/* O QUE SIGNIFICA O list-style-type dentro do li? */
 li {
     list-style-type: none;
 }
-
+/* PARA O QUÊ É UTILIZADO O line-through AQUI?? */
 .line-through {
     text-decoration: line-through;
 }
