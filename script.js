@@ -3,11 +3,11 @@ const btnInsert = document.querySelector('.input-sequence button')
 const btnDeleteAll = document.querySelector('.header button')
 const ul = document.querySelector('ul')
 
-let itemsDB = []
+let itensDB = []
 // POR QUE COLOCAR OS EVENTOS ANTES E AS FUNÇÕES DEPOIS?
 // O EVENTO btnDeleteAll.onclick é PARA eu DELETAR todos os itens de uma vez só?
 btnDeleteAll.onclick = () => {
-  itemsDB = []
+  itensDB = []
   updateDB()
 }
 
@@ -25,13 +25,13 @@ btnInsert.onclick = () => {
   }
 }
 function setItemDB() {
-  if (itemsDB.length >= 20) {
+  if (itensDB.length >= 20) {
     //console.log (alert)
     alert("Limite máximo de 20 itens atingido!")
     return
   }
   // O QUE É O texto.value?
-  itemsDB.push({ item: texto.value, 'status': ''})
+  itensDB.push({ item: texto.value, 'status': ''})
 }
 
 function updateDB() {
@@ -41,9 +41,9 @@ function updateDB() {
 // O QUE SIGNIFICA ?? []  ?
 function loadItems() {
   ul.innerHTML = ""
-  itemsDB = JSON.parse(localStorage, getItem('todolist')) ?? []
+  itensDB = JSON.parse(localStorage, getItem('todolist')) ?? []
   // NO forEach (item, i) você quis fazer ele ler todos os itens de forma ordenada ou não tem nada a ver?
-  itemsDB.forEach((item, i) => {
+  itensDB.forEach((item, i) => {
     // No insertItemTela você colocou um .item e um .status por que mesmo?
     insertItemTela(item.item, item.status, i)
   })

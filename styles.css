@@ -33,7 +33,7 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-#first-button {
+.first-button {
     position: absolute;
     right: 18%;
     margin-top: -10px; 
@@ -54,7 +54,7 @@ h1 {
     background-color: rgb(217, 192, 192);
 }
 
-#input-jobs {
+.input-jobs {
 
     outline: none;
     border: none;
